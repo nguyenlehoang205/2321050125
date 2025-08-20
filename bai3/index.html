@@ -1,0 +1,124 @@
+<html> 
+    <body>
+        <MARQUEE><img src="../bai1/image/Logo_Truong_Dai_hoc_Mo_-_Dia_chat.jpg" width ="15%" height="15%" alt=""></MARQUEE>
+        <h1>Bài 3</h1>
+        <!-- danh sách có thự tự -->
+         <!-- có thứ tự ol, li -->
+        <ol>
+            <li>Phần tử đầu tiến</li>
+            <li>Phần tử thứ hai</li>
+            <li>Phần tử thứ ba</li>
+            <li>Phần tử thứ tư</li>
+        </ol>
+        <!-- danh sách không có thứ tự -->
+        <ul>
+            <li>Phần tử đầu tiên</li>
+            <li>Phần tử thứ hai</li>
+            <li>Phần tử thứ ba</li>
+            <li>Phần tử thứ tư</li>
+        </ul>
+
+        <h1>Form</h1>
+            <form>
+        <div>
+            <b>Họ và tên : </b>
+            <input type="text" name="hoten" placeholder="Nhập họ và tên" required>
+        </div>
+        <br>
+         <div>
+            <b>Năm : </b>
+            <input type="text" name="nam" value="2025" readonly>
+         </div>   
+        <br>
+         <div>
+            <b>Giới thiệu chi tiết về bản thân: </b><br>
+            <textarea name="gioithieu">Nhập giới thiệu.....</textarea>
+         </div>
+        <br>
+            <div>
+                <b>Email: </b> <br>
+                <input type="email" nam="email" placeholder="Dạng @gmail.com">
+            </div>
+            <br>
+            <div>
+                <b>Số điện thoại: </b><br>
+                <input type="tel" name="sdt" placeholder="Nhập số điện thoại" required pattern="([0-9]{1}[3,4,9]{1})([0-9]{8})" >
+
+            </div>
+            <br>
+            <div>
+                <b>Giới tính</b> <br>
+                <input type="radio" name="gioitinh" value="Nam"> Nam <br>
+                <input type="radio" name="gioitinh" value="Nữ"> Nữ <br>
+                <input type="radio" name="gioitinh" value="Khác"> Khác <br>
+            </div>
+            <br>
+            <div>
+                <b>Sở thích</b> <br>
+                Game: <input type="checkbox" name="sothich" value="Game"><br>
+                Du lịch: <input type="checkbox" name="sothich" value="Du lịch"><br>
+                Đọc sách: <input type="checkbox" name="sothich" value="Đọc sách"><br>
+            </div>
+            <br>
+            <div>
+                <b>Trình duyệt ưa thích </b> <br>
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Edge">
+                    <option value="Safari">
+                    <option value="Opera">
+                </datalist>
+            </div>
+            <br>
+            <select name="browsers">
+                <option value="Chrome">Chrome</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Edge">Edge</option>
+                <option value="Safari">Safari</option>
+                <option value="Opera">Opera</option>
+            </select>
+            <br>
+            <div>
+                <b>Âm lượng</b> <br>
+                0 <input type="range" name="range" min="0" max="100" step="1" value="100"> 100 
+            </div>
+                <br>
+            <div> <b>Tuổi </b> <br>
+                <input type="number" name="tuoi" min="1" max="100" step="1" value="18">
+            </div>
+            <br>   
+            <div>
+                <b>Ngày tháng năm sinh</b> <br>
+                <input type="date" id="ngaythangnamsinh" name="ngaythangnamsinh">
+            </div>
+            <br>
+            <div>
+                <b>Màu sắc yêu thích </b>
+                <input type="color" name=""id="">   
+            </div>
+            <br>
+            <div>
+                <b>Mật khẩu</b>
+                <input type="password">
+            </div>
+            <br> 
+            <div>
+                <input type="reset">
+            </div>
+            <br>
+            <div>
+                <input type="submit">
+            </div>
+        </form>   
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qVEudHD150g?si=sMAdM3LL2SxXQ9IE" ></iframe><br>
+        <video controls width="560" height="315">
+        <source src="../bai1/video/曼波 (孤高之马) 哦耶 duang 赛马娘 Manbo (The Lone Horse) Oh yeah duang Racehorse Girl.mp4" type="video/mp4">
+    </video>
+    <br>
+    <audio controls>
+        <source src="../bai1/audio/Loyalty_Freak_Music_-_06_-_People_are_spinning(chosic.com).mp3" type="audio/mp3">
+    </audio>
+    </body>
+</html>
