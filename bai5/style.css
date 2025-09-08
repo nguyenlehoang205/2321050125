@@ -11,10 +11,6 @@ ul{
     padding:20px;
 }
 
-.danhmuc{
-    background-color: #2fa4e7;
-    padding:20px;
-}
 .danhmuc-muc{
     padding:10px;
 }
@@ -22,13 +18,14 @@ ul{
 .danhmuc-danhsach{
     display:flex;
     list-style: none;
+    
 }
 
 .danhmuc-lienket{
     text-decoration: none;
     font-size: larger;
     color:white;
-
+    font-family: Arial;/* font chữ*/
 }
 
 .danhmuc-lienket:hover{
@@ -37,43 +34,126 @@ ul{
 }
 
 .logo{
-    height:40px;
-    background-color: red;
+    height:60px;
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
 }
+.tieude{/*chứa tiêu đề*/
+    background-color: #2fa4e7;
+    padding:20px;
+    color:white;
+    font-size: medium;
+    font-family: Arial;
+    border-radius: 10px 10px 0px 0px;
+}
+
 
 main{
-    display:flex;
+  display:flex
 }
 
-.noidung-trai{
+.noidung-trai{/*chứa nội dung trái*/
     width:80%;
     border-radius: 10px;
+}
+.tintuc-danhsach{
+    display:flex;
+    justify-content: space-between;
+}
+
+.thongbao{/*chứa thông báo*/
+    height:90px;
+    width:100%;
+}
+
+.thongbao-noidung{/*chứa thông báo trái và phải*/
+    display:flex; 
+    list-style: none;
+}
+
+.thongbao-trai{/*chứa thông báo trái*/
+    height:350px;
+    width:30%;
+    color:#2fa4e7f7;
+    border:1px solid grey;
+}
+
+.baiviet-thongbao-trai{/*chứa bài viết thông báo trái*/
+    color:#2fa4e7f7;
+    font-family: Arial;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    padding: 12px;
+    text-align: justify;
+}
+.baiviet-thongbao-trai:hover{
+    color:lightskyblue ;
+}   
+
+.thongbao-phai{ /*chứa thông báo phải*/
+    height:350px;
+    width:70%;
+}
+
+.thongbao-danhmuc{/*chứa danh mục thông báo phải*/
+    height:350px;
+    width:100%;
+    border:1px solid grey;
+    list-style: none;
+}
+
+.baiviet-thongbao{/*chứa bài viết thông báo phải*/
+    color:black;
+    font-family: Arial;
+    font-size: medium;
+    padding: 12px; 
+    text-decoration: none;
+}   
+
+.baiviet-thongbao:hover{
+    color:grey;
 }
 
 .noidung-phai{
     height:1000px;
-    background-color:chartreuse;
     width:20%;
-}
-
-.tieude{
-    background-color: #2fa4e7;
-    padding:20px;
-    color:white;
-    font-size: large;
-    font-weight: bold;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.tintuc-danhsach{
-    display:flex;
-    justify-content: space-between;
+    border-radius: 0px 10px 10px 0px;
+    
 }
 
 .baiviet{
     height:100px;
     background-color:grey;
     width:350px;
-    
-
 }
+.form-input{
+    width:300px;
+    height:auto;
+    font-size: large;
+}
+
+.huongdan-danhmuc{
+   /* list-style: none;*/
+}
+.huongdan-baiviet{
+    color:black;
+    font-family: Arial;
+    text-decoration: none;
+    font-size: medium;
+    padding: 12px; 
+}
+.huongdan-baiviet:hover{
+    color:grey;
+}
+.footer-noidung{
+    background-color: #2fa4e7;
+    height:100px;
+    color:white;
+    text-align: center;
+    padding:20px;
+    font-family: Arial;
+    font-size:small;
+    }
+
