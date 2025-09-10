@@ -57,19 +57,60 @@ main{
     width:80%;
     border-radius: 10px;
 }
+.tintuc{
+    margin-right: 10px;
+}
 .tintuc-danhsach{
     display:flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    padding:3px;
+ 
+}
+.baiviet{
+    height:100px;
+    background-color:grey;
+    width:395px; 
+    
+}
+.tintuc-baiviet{
+   text-decoration: none;
+}
+.tintuc-baiviet img{ /* nghĩa là: chọn tất cả thẻ <img> nằm bên trong phần tử có class là <tintuc-baiviet> .*/
+   width: 100%;
+   display: block;
+
+}
+
+.ngaythang{
+    background-color:lightblue;
+    font-family: Arial;
+    font-style: italic;
+    color:grey;
+    font-size: small;
+    text-align: end;
+    
+}
+.tintuc-tieude{
+    background-color:lightblue;
+    font-family: Arial;
+    color:black;
+    font-size: small;
+    text-align:center;
+    height:max-content;
+    
 }
 
 .thongbao{/*chứa thông báo*/
     height:90px;
     width:100%;
+    margin-right:100px;
+    padding:10px;
 }
 
 .thongbao-noidung{/*chứa thông báo trái và phải*/
     display:flex; 
     list-style: none;
+    
 }
 
 .thongbao-trai{/*chứa thông báo trái*/
@@ -122,16 +163,15 @@ main{
     border-radius: 0px 10px 10px 0px;
     
 }
-
-.baiviet{
-    height:100px;
-    background-color:grey;
-    width:350px;
+.button{
+    background-color: #2fa4e7;
 }
-.form-input{
-    width:300px;
-    height:auto;
-    font-size: large;
+.quenmatkhau{
+    text-decoration: none;
+    
+}
+.dangnhap-noidung{
+    text-align: center;
 }
 
 .huongdan-danhmuc{
@@ -156,4 +196,9 @@ main{
     font-family: Arial;
     font-size:small;
     }
+
+.huongdan{
+  margin-right:10px;
+    
+}
 
