@@ -1,0 +1,16 @@
+header{
+    background-color:black;
+
+}
+body{
+    margin:0;
+    background-color:black;
+    
+}
+.container{
+    width:40%;
+    margin:auto;
+    background-color:blue;
+    height:700px;
+    margin:auto;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>
+        document.writeln("Hello, World !" + "<br>");
+        // để khai báo biến trên JS dùng let hoặc var
+        // cú pháp : let Tên biến = giá trị
+        // để nối chuỗi JS dùng dấu +
+        let hoTen ="Nguyen Le Hoang" + "<br>";
+
+        document.writeln(hoTen);
+
+        let soThuNhat = 10;
+        let soThuHai = 5;
+        let ketQua = 0;
+
+        
+        ketQua = soThuNhat * soThuHai;
+
+        soThuNhat += soThuHai;
+        document.writeln(soThuNhat);
+        // soThuNhat = soThuNhat + soThuHai;
+        // ketQua++;
+        document.writeln(++ketQua);
+
+        // == != !
+
+
+        // ===( quan tâm đến cả kiểu dữ liệu)
+        document.writeln(soThuNhat == soThuHai);
+
+        let thongTinSinhVien = {
+            hoTen: "Le Truong An",
+            mssv:"2321050052",
+            gioiTinh:true,
+            tuoi:20,
+            lop:"Đại học_Mạng máy tính_k67A"
+        }
+
+        let diaChi={
+            thanhPho:"Thanh Hóa",
+            phuong:"Tào Xuyên",
+            duong:"ABC",
+            soNha:"123"
+        }
+
+        thongTinSinhVien.diaChi = diaChiNhaBanAn;
+
+        document.writeln("Xin chào" + thongTinSinhVien.hoTen + " " + thongTinSinhVien.tuoi + "Tuổi" + " " + "Nhà ở" + thongTinSinhVien.diaChi.thanhPho);
+
+        let namNay = 2025;
+        document.writeln(
+            "Bạn" + thongTinSinhVien.hoTen +"sinh năm"+(namNay - thongTinSinhVien.tuoi)
+        );
+    </script>
+</body>
+</html>

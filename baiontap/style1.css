@@ -1,0 +1,16 @@
+body{
+    background-color:whitesmoke;
+}
+main{
+    display:flex;
+}
+.noidung-trai{
+    width: 70%;
+    height:1000px;
+    color:chartreuse;
+}
+.noidung-phai{
+    width: 30%;
+    height:1000px;
+    color:blue;
+}

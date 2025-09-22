@@ -1,0 +1,108 @@
+header{
+    background-color:#0c4ca3;
+}
+
+body{
+    margin:0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0c4ca3;
+    width: 70%;
+    margin: auto;
+}
+
+.danhmuc-lienket{
+  
+}
+
+.danhmuc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 15%;
+}
+ol{
+    list-style:none;
+}
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 20px
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #9b9b9b;
+    font-size: 16px;
+    font-family: "SFProDisplay", Arial, sans-serif;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+  margin-top:20px;
+}
+.tintuc{
+    margin-top:20px;
+}
+
+.main-container{
+  
+    width: 70%;
+    margin: auto;
+}
+
+.tintuc-danhsach{
+    justify-content:space-between;
+    display:flex;
+    gap:20px;
+}
+
+.thongbao{
+    margin-top:100px;
+    background-color: yellow;
+    height:200px;
+}
+
+.hoatdong{
+    margin-top: 30px;
+    height:200px;
+    background-color: green;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0c4ca3;
+    
+    margin: auto;
+}
+.footer-container{
+   display: flex;
+    justify-content: space-between;
+    background-color: #0c4ca3;
+    width: 70%;
+    margin: auto;
+    height:200px;
+}
+
+.footer-trai{
+    margin:auto;
+    width:50%;
+}
+
+.footer-phai{
+    width:50%;
+}
+
