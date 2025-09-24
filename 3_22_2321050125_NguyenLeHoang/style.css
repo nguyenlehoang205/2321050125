@@ -51,7 +51,7 @@ a{
 }
 .noidung-phai{
     /* height:1000px; */
-    width:30%;
+    width:70%;
    
     
 }
@@ -64,8 +64,9 @@ a{
     color:black;
     margin-top:100px;
 }
+
 .noidung-trai{
-    width:70%
+    width:30%
 }
 .tintuc-danhsach{
     justify-content:space-between;
@@ -76,22 +77,28 @@ a{
     font-family:Arial;
 }
 .thongbao{
+    
     margin-top:70px;
 }
 .thongbao-danhsach{
     display:flex;
-     justify-content:space-between;
-    gap:150px;
+
+    
 }
+.thongbao-tieude{
+    margin:auto;
+    margin-right: 150px;
+}
+
 .thongbao-baiviet{
     display:flex;
+    gap:30px;
     margin:auto;
-    align-items: center;
-    margin-right: 10px;
+    
 }
 footer{
     margin-top:20px;
-    background-color: grey;
+
     height:200px;
 }
 .footer-noidung{
