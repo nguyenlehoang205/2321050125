@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3,4,5, 'a', 'b', 'c', 'd', 5, 6];
+        let v ="abc";
+
+        document.writeln(arr + "<br>");
+
+        // trả về vị trị xuất hiện đầu tiên của ký tự
+        document.writeln(arr.indexOf('a')+"<br>");
+
+        // Đếm số phần tử trong mảng
+        document.writeln(arr.length +"<br>");
+
+        // Lấy phần tử thứ n-1 trong mảng
+        document.writeln(arr[3]+"<br>");
+
+        // trả ra vị trí xuất hiện cuối cùng của phần tử trong mảng
+        document.writeln(arr.lastIndexOf(5)+"<br>");
+
+        document.writeln(Array.isArray(arr)+"<br>");
+
+        let a, b, c, d;
+        a = [1,2,3,4];
+        b="JavaScript";
+        c=[42, "VBScript"];
+        // nối các mảng 
+        d= a.concat(b, c);
+        //lấy phần từ cuối cùng của mảng
+        // e = d.pop();
+
+        //thêm 1 phần tử vào vị trí cuối cùng của mảng
+        d.push("Kiên");
+        //xóa phần tử đầu tiên
+        d.shift();
+
+        //thêm phần tử vào đầu mảng
+        d.unshift("A");
+        d[4]=5;
+        document.writeln(d+"<br>");
+        //Biến 1 mảng thành 1 chuỗi với ký tự phân cách mà mình chọn
+        // document.writeln(d.join("-")+"<br>");
+        document.writeln(Array.isArray(d)+"<br>");
+        // đảo các vị trí phần tử trong mảng
+        document.writeln(d.reverse()+"<br>");
+
+
+
+
+        //IF - ELSE
+        let toDay = new Date();
+        let now = toDay.getHours();
+        if(toDay.getHours() < 10) {
+            document.writeln("Chào buổi sáng"+"<br>");
+        }else if (now >= 10 && now < 12){
+            document.writeln("Chào buổi trưa"+"<br>");
+        }else if (now >= 12 && now < 17){
+            document.writeln("Chào buổi chiều"+"<br>");
+        }else if(now >= 17 && now < 22){
+            document.writeln("Chào buổi tối"+"<br>");
+        }else{
+            document.writeln("Chào buổi tối"+"<br>");
+        }
+
+        // // }else if(  toDay.getHours() >= 10 || toDay.getHours() < 12 +"<br>"){
+        //     document.writeln("Chào buổi trưa"+"<br>");
+        // }else{
+        //     document.writeln("Chào buổi tối"+"<br>");
+        // }
+
+        let so = "1000000000000000000000004";
+        let soCuoiCung = parseInt(so[so.length - 1]);
+        if( soCuoiCung % 2 == 0){
+            document.writeln("là số chẵn"+"<br>");
+        }else{
+            document.writeln("là số lẻ"+"<br>");
+        }
+        
+    </script>
+</body>
+</html>

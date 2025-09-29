@@ -55,27 +55,34 @@
 
         var myString="Hello Kien";
         document.writeln(myString.slice(1,4)+"<br>");
+        //hoạt động như [1;4)
 
-        document.writeln(myString.replace("Hello" ,"Hi," ));
+        document.writeln(myString.replace("Hello" ,"Hi," )+"<br>");
+        //thay thế chuỗi 1 bằng chuỗi 2
 
-        document.writeln(myString.toLowerCase());
+        document.writeln(myString.toLowerCase()+"<br>");
+        // chuyển về chữ thường
 
-        document.writeln(myString.indexOf('e'));
+        document.writeln(myString.indexOf('e')+ "<br>");
+        //tìm vị trí của ký tự trong chuỗi, nếu không tìm thấy trả về -1
 
-        document.writeln(myString.includes('K'));
+        document.writeln(myString.includes('K')+    "<br>");
+        //kiểm tra chuỗi có chứa ký tự hay không, trả về true/false
         
         // tách chuỗi thành mảng
-        document.writeln(myString.split(''));
+        document.writeln(myString.split(''))+"<br>";
 
         let danhSach = ["Phạm Tiệp Anh", "Nguyễn Tiến Bách", "Lương Ngọc Bích", "Lê Duy Ngọc Đức", "Đào Quang Lộc" ]
 
-        document.writeln(danhSach[1].startsWith("Nguyễn"));
-
+        document.writeln(danhSach[1].startsWith("Nguyễn")+"<br>");  
+        // chuỗi có bắt đầu bằng ký tự hay không, trả về true/false
         // chuyển chuỗi về số
+
 
         let so = "123";
         document.writeln(typeof (so)+"<br>");
-        // document.writeln(typeof (number(so)));
+         document.writeln(typeof (Number(so))+"<br>");
+        
         
 
         let pi=3.14159;
