@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        // alert("Xin chào bạn");
+
+        // let result = confirm("Press a button");
+        // document.writeln(result);
+        //     if(result == true){
+        //         document.writeln("Press OK!"+"<br>");
+        //     }else{
+        //         document.writeln("Cancel");
+        //     }
+
+        // let result2 = prompt("Sometext", "default value");
+        //     document.writeln(result2);
+
+
+        // var toDay = new Date();
+        // theDay =toDay.getDay();
+        
+        // switch(theDay){
+        //     case 5:
+        //         document.writeln("Finally Friday"+"<br>");
+        //         // kiểm tra xem có phải thứ 6
+        //         break;
+            
+        //     case 6:
+        //         document.writeln("Super Saturday"+"<br>");
+        //         // kiểm tra xem có phải thứ 7 
+        //         break;
+
+        //     case 0:
+        //         document.writeln("Sleepy Sunday"+"<br>");
+        //         // kiểm tra xem có phải chủ nhật không
+        //         break;
+
+        //     default:
+        //         document.writeln("Im looking forward to this weekend"+"<br>");
+        // }
+
+
+
+        // vòng lặp for 
+
+            // let arrNum=[1,2,3,4,5,6];
+
+            // // for (var i = 1; i<=10; i++){
+            // //     document.writeln(i + "Xin lỗi"+"<br>");
+            // // }
+
+            // for(let j = 0; j <= arrNum.length-1; j++ ){
+            //     document.writeln(arrNum[j]+"<br>");
+            // }
+
+
+            // let danhSach=["Nguyễn Văn A","Nguyễn Văn B","Nguyễn Văn C","Nguyễn Văn D"]
+
+            // for(let k=0; k<=danhSach.length-1; k++){
+            //     document.writeln("Xin chào"+ " " + danhSach[k]+"<br>");
+            // }
+
+
+            // vòng WHILE và DO-WHILE
+
+
+            // let i = 0
+            // while(i<=10){
+            //     document.writeln("The number is " + i + "<br>");
+            //     i=i+1;
+            // }
+
+            //let + tên biến  = giá trị
+            // function + tên hàm +(){
+                // logic code
+            //}
+
+            // hàm không tham số
+            // let name ="Anh Phương Tuấn";
+
+            // biến toàn cục là khai báo bên ngoài hàm
+
+            // biến cục bộ là biến khai báo bên trong hàm
+
+            // function sayHello(){
+            //     let name ="Anh Phương Tuấn"; // biến này chỉ có giá trị trong hàm sayHello()
+            //     document.writeln("Hello " + name);
+            // }
+            
+            // sayHello();
+            // document.writeln(name);
+
+            // sayHello();
+
+            //Có tham số
+            // function sayHello2(name,age){
+            //     document.writeln("Hello"+ " " + name + " " + age + " Tuổi");
+            // }
+
+            // let nameP = prompt("Tên", "Điền tên");
+            // let ageP = prompt("Tuổi", "Điền tuổi");
+
+            // sayHello2(nameP,ageP);
+
+
+            // let Num = prompt("Số", "Điền số");
+                
+
+            // if(!isNaN(Num)){
+            //     Num = parseFloat(Num);
+            //   document.writeln(typeof(Num));
+            //       kiemTra(Num);
+            // }else{
+            //     document.writeln("Vui lòng nhập vào số");
+            // }
+
+            // function kiemTra(){
+            //     let soCuoi = parseInt(Num[Num.length - 1]);
+            //         if( soCuoi % 2 == 0){
+            //             document.writeln("là số chẵn"+"<br>");
+            //         }else{
+            //             document.writeln("là số lẻ"+"<br>");
+            //         }
+            // }
+
+            // kiemTra(Num);
+
+
+            let N1 = prompt("Mời bạn nhập số:"); // abc
+
+        function check(N1) {
+            if (N1 % 2 == 0) {
+                document.write(N1 + " là số chẵn");
+            } else {
+                document.write(N1 + " là số lẻ");
+            }
+        }
+
+        //N1 (abc) is not a number (true)
+        if (!isNaN(N1)) {
+            N1 = parseFloat(N1);
+            check(N1);
+        }
+        else {
+            document.writeln("Vui lòng nhập vào số!");
+        }
+            
+   </script> 
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let danhSachSV=[
+            sinhVien1={
+                maSv:"SV001",
+                hoTen:"Nguyễn Văn A",
+                tuoi:"20",
+                lop:"CTK42",
+                diemA:8,
+                diemB:9.5,
+                diemC:10,
+                 diemTB:function(){
+                    return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+                },
+
+                xepLoai:function(){
+                     const diem = parseFloat(this.diemTB())
+                    if(diem >= 8 ){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: GIỎI" + "<br>");
+                    }else if(diem >= 6.5){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: KHÁ"+ " <br>");
+                    }else if(diem >= 4.5){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: TRUNG BÌNH"+"<br>");
+                    }else{
+                        document.writeln("Sinh viên không đạt yêu cầu"+"<br>")
+                    }
+
+                }
+               
+            },
+
+            sinhVien2={
+                maSv:"SV002",
+                hoTen:"Nguyễn Văn B",
+                tuoi:"21",
+                lop:"CTK42",
+                diemA:7,
+                diemB:8.5,
+                diemC:9,
+                diemTB:function(){
+                    return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+                },
+
+                xepLoai:function(){
+                     const diem = parseFloat(this.diemTB())
+                    if(diem >= 8 ){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: GIỎI" + "<br>");
+                    }else if(diem >= 6.5){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: KHÁ"+ " <br>");
+                    }else if(diem >= 4.5){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: TRUNG BÌNH"+"<br>");
+                    }else{
+                        document.writeln("Sinh viên không đạt yêu cầu"+"<br>")
+                    }
+
+                }
+
+            },
+
+            sinhVien3={
+                maSv:"SV003",
+                hoTen:"Nguyễn Văn C",
+                tuoi:"22",
+                lop:"CTK42",
+                diemA:6,
+                diemB:7.5,
+                diemC:8,
+                diemTB:function(){
+                    return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+                },
+
+                 diemTB:function(){
+                    return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+                },
+
+                xepLoai:function(){
+                     const diem = parseFloat(this.diemTB())
+                    if(diem >= 8 ){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: GIỎI" + "<br>");
+                    }else if(diem >= 6.5){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: KHÁ"+ " <br>");
+                    }else if(diem >= 4.5){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: TRUNG BÌNH"+"<br>");
+                    }else{
+                        document.writeln("Sinh viên không đạt yêu cầu"+"<br>")
+                    }
+
+                }
+
+            },
+
+            sinhVien4={
+                maSv:"SV004",
+                hoTen:"Nguyễn Văn D",
+                tuoi:"23",
+                lop:"CTK42",
+                diemA:5,
+                diemB:6.5,
+                diemC:7,
+                diemTB:function(){
+                    return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+                },
+
+                 diemTB:function(){
+                    return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+                },
+
+                xepLoai:function(){
+                     const diem = parseFloat(this.diemTB())
+                    if(diem >= 8 ){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: GIỎI" + "<br>");
+                    }else if(diem >= 6.5){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: KHÁ"+ " <br>");
+                    }else if(diem >= 4.5){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: TRUNG BÌNH"+"<br>");
+                    }else{
+                        document.writeln("Sinh viên không đạt yêu cầu"+"<br>")
+                    }
+
+                }
+    
+            },
+
+            sinhVien5={
+                maSv:"SV005",
+                hoTen:"Nguyễn Văn E",
+                tuoi:"24",
+                lop:"CTK42",
+                diemA:2,
+                diemB:3,
+                diemC:4,
+                diemTB:function(){
+                    return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+                },
+
+                xepLoai:function(){
+                     const diem = parseFloat(this.diemTB())
+                    if(diem >= 8 ){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: GIỎI" + "<br>");
+                    }else if(diem >= 6.5){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: KHÁ"+ " <br>");
+                    }else if(diem >= 4.5){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: TRUNG BÌNH"+"<br>");
+                    }else{
+                        document.writeln("Sinh viên không đạt yêu cầu"+"<br>")
+                    }
+
+                }
+                
+            },
+        ]
+
+        let sinhVienMoi = {
+            maSv:"SDC007",
+            hoTen:"Trần Thị F",
+            tuoi:"24",
+            lop:"DCTK42",
+            diemA:10,
+            diemB:8.5,
+            diemC:9,
+            diemTB:function(){
+                    return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+                },
+                
+            xepLoai:function(){
+                     const diem = parseFloat(this.diemTB())
+                    if(diem >= 8 ){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: GIỎI" + "<br>");
+                    }else if(diem >= 6.5){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: KHÁ"+ " <br>");
+                    }else if(diem >= 4.5){
+                        document.writeln("Sinh viên đã đạt yêu cầu, học lực: TRUNG BÌNH"+"<br>");
+                    }else{
+                        document.writeln("Sinh viên không đạt yêu cầu"+"<br>")
+                    }
+
+                }
+
+        }
+       
+        danhSachSV.push(sinhVienMoi);
+        danhSachSV.shift();
+
+
+            for(var i = 0; i < danhSachSV.length; i++){
+                document.writeln("Mã sinh viên: " + danhSachSV[i].maSv + "<br>");
+                document.writeln("Họ tên: " + danhSachSV[i].hoTen + "<br>");
+                document.writeln("Tuổi: " + danhSachSV[i].tuoi + "<br>");
+                document.writeln("Lớp: " + danhSachSV[i].lop + "<br>");
+                document.writeln("Điểm trung bình: " + danhSachSV[i].diemTB() + "<br>");
+                danhSachSV[i].xepLoai();
+                document.writeln("<br>");
+            }
+
+        
+
+
+        
+    </script>
+    
+</body>
+</html>
