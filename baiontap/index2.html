@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  let danhSachSv =[
+        //     sinhVien1={
+        //         maSV:"SV001",   
+        //         hoTen:"Nguyễn Văn A",
+        //         lop:"CNTT68A",
+        //         diemA:8,
+        //         diemB:7,
+        //         diemC:10,
+        //             diemTb:function(){
+        //                 return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+        //             },
+
+        //             xepLoai:function(){
+        //              const diem = parseFloat(this.diemTB())
+        //             if(diem >= 8 ){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: GIỎI" + "<br>");
+        //             }else if(diem >= 6.5){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: KHÁ"+ " <br>");
+        //             }else if(diem >= 4.5){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: TRUNG BÌNH"+"<br>");
+        //             }else{
+        //                 document.writeln("Sinh viên không đạt yêu cầu"+"<br>")
+        //             }
+        //         }    
+        //     },
+
+        //      sinhVien2={
+        //         maSv:"SV002",
+        //         hoTen:"Nguyễn Văn B",
+        //         tuoi:"21",
+        //         lop:"CTK42",
+        //         diemA:7,
+        //         diemB:8.5,
+        //         diemC:9,
+        //         diemTB:function(){
+        //             return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+        //         },
+
+        //         xepLoai:function(){
+        //              const diem = parseFloat(this.diemTB())
+        //             if(diem >= 8 ){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: GIỎI" + "<br>");
+        //             }else if(diem >= 6.5){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: KHÁ"+ " <br>");
+        //             }else if(diem >= 4.5){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: TRUNG BÌNH"+"<br>");
+        //             }else{
+        //                 document.writeln("Sinh viên không đạt yêu cầu"+"<br>")
+        //             }
+
+        //         }
+
+        //     },
+
+        //     sinhVien3={
+        //         maSv:"SV003",
+        //         hoTen:"Nguyễn Văn C",
+        //         tuoi:"22",
+        //         lop:"CTK42",
+        //         diemA:6,
+        //         diemB:7.5,
+        //         diemC:8,
+        //         diemTB:function(){
+        //             return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+        //         },
+
+        //          diemTB:function(){
+        //             return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+        //         },
+
+        //         xepLoai:function(){
+        //              const diem = parseFloat(this.diemTB())
+        //             if(diem >= 8 ){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: GIỎI" + "<br>");
+        //             }else if(diem >= 6.5){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: KHÁ"+ " <br>");
+        //             }else if(diem >= 4.5){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: TRUNG BÌNH"+"<br>");
+        //             }else{
+        //                 document.writeln("Sinh viên không đạt yêu cầu"+"<br>")
+        //             }
+
+        //         }
+
+        //     },
+
+        //     sinhVien4={
+        //         maSv:"SV004",
+        //         hoTen:"Nguyễn Văn D",
+        //         tuoi:"23",
+        //         lop:"CTK42",
+        //         diemA:5,
+        //         diemB:6.5,
+        //         diemC:7,
+        //         diemTB:function(){
+        //             return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+        //         },
+
+        //          diemTB:function(){
+        //             return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+        //         },
+
+        //         xepLoai:function(){
+        //              const diem = parseFloat(this.diemTB())
+        //             if(diem >= 8 ){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: GIỎI" + "<br>");
+        //             }else if(diem >= 6.5){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: KHÁ"+ " <br>");
+        //             }else if(diem >= 4.5){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: TRUNG BÌNH"+"<br>");
+        //             }else{
+        //                 document.writeln("Sinh viên không đạt yêu cầu"+"<br>")
+        //             }
+
+        //         }
+    
+        //     },
+
+        //     sinhVien5={
+        //         maSv:"SV005",
+        //         hoTen:"Nguyễn Văn E",
+        //         tuoi:"24",
+        //         lop:"CTK42",
+        //         diemA:2,
+        //         diemB:3,
+        //         diemC:4,
+        //         diemTB:function(){
+        //             return((this.diemA*0.6)+(this.diemB*0.3)+(this.diemC*0.1)).toFixed(1);
+        //         },
+
+        //         xepLoai:function(){
+        //              const diem = parseFloat(this.diemTB())
+        //             if(diem >= 8 ){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: GIỎI" + "<br>");
+        //             }else if(diem >= 6.5){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: KHÁ"+ " <br>");
+        //             }else if(diem >= 4.5){
+        //                 document.writeln("Sinh viên đã đạt yêu cầu, học lực: TRUNG BÌNH"+"<br>");
+        //             }else{
+        //                 document.writeln("Sinh viên không đạt yêu cầu"+"<br>")
+        //             }
+
+        //         }
+                
+        //     },
+        // ]
+        //         for (var i = 0; i<danhSachSv.length; i++){
+        //             document.writeln("Mã sinh viên: " + danhSachSV[i].maSv + "<br>");
+        //         document.writeln("Họ tên: " + danhSachSV[i].hoTen + "<br>");
+        //         document.writeln("Tuổi: " + danhSachSV[i].tuoi + "<br>");
+        //         document.writeln("Lớp: " + danhSachSV[i].lop + "<br>");
+        //         document.writeln("Điểm trung bình: " + danhSachSV[i].diemTB() + "<br>");
+        //         danhSachSV[i].xepLoai();
+        //         document.writeln("<br>");
+
+        //         }
+
+
+                // var toDay = new Date();
+                // theDay = toDay.getDay();
+
+                // switch(theDay){
+                //     case 5: 
+                //         document.writeln("Finally Friday"+"<br>");
+                //             break;
+
+                //     case 6: 
+                //         document.writeln("Super Saturday"+"<b>");
+                //             break;
+
+                //     case 0:
+                //         document.writeln("Sleepy Sunday"+"<br>");
+                //             break;
+
+                //     default:
+                //         document.writeln("Im looking forward to this weekend"+"<br>")
+                // }
+
+
+
+                    let diemA = prompt("Điểm A", "Nhập điểm A");
+                    let diemB = prompt("Điểm B", "Nhập điểm B");
+                    let diemC = prompt("Điểm C", "Nhập điểm C");
+
+
+                    function kiemTra(diemA, diemB, diemC){
+                        diemA = parseFloat(diemA);
+                        diemB = parseFloat(diemB);
+                        diemC = parseFloat(diemC);
+
+                        if(isNaN(diemA) || isNaN(diemB) || isNaN(diemC)){
+                            document.writeln("Vui lòng nhập số hợp lệ!");
+                                return;
+                        }
+                        let diemTB = ((diemA*0.6)+(diemB*0.3)+(diemC*0.1))
+                        diemTB =parseFloat(diemTB.toFixed(1));
+                        document.writeln("điểm trung bình: " + diemTB + "<br>" );
+
+                        if (diemTB >= 8){
+                            document.writeln("giỏi"+"<br>");
+                        }else if(diemTB<8 || diemTB >= 6.5 ){
+                            document.writeln("khá"+"<br>");
+                        }else if(diemTB<6.5 || diemTB>4){
+                            document.writeln("trung bình"+"<br>");
+                        }else{
+                            document.writeln("không đạt"+"<br>");
+                        }
+                    }
+
+                    kiemTra(diemA, diemB, diemC);
+                        
+
+                //     let theDay = new Date();
+                //     toDay = theDay.getDay();
+
+                //     let thDay = prompt("Nhập số");
+                //     function kiemTra(thDay){
+                //         thDay = parseInt(thDay);
+
+                //     switch(thDay){
+                //         case (0):
+                //             document.writeln("chủ nhật"+"<br>");
+                //             break;
+
+                //         case (1):
+                //             document.writeln("thứ 2"+"<br>");
+                //             break;
+
+                //         case (2):
+                //             document.writeln("thứ 3"+"<br>");
+                //             break;
+
+                //         case (3):
+                //             document.writeln("thứ 4"+"<br>");
+                //             break;
+
+                //         case (4):
+                //             document.writeln("thứ 5"+"<br>");
+                //             break;
+
+                //         case (5):
+                //             document.writeln("thứ 6"+"<br>");
+                //             break;
+
+                //         case (6):
+                //             document.writeln("thứ 7"+"<br>");
+                //             break;
+                //     }
+                // }
+                // kiemTra(thDay);
+
+
+
+
+    </script>
+</body>
+</html>
