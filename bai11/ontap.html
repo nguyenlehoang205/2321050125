@@ -20,7 +20,7 @@
         <button onclick="xemKetQua()">Tính điểm</button>
     </div>
     <div>
-        Kết quả: <input type="text" id="ketQua">
+        Kết quả: <input type="text" id="ketQua" readonly />
     </div>
     <script>
         function xemKetQua(){
@@ -54,33 +54,35 @@
            
             if (kiemTraHopLe(a, b, c) == true ){
             let diemTb=(a*0.6)+(b*0.3)+(c*0.1);
-                diemTb.toFixed(1);
-                document.writeln("Điểm trung bình của sinh viên là: "+diemTb);
+            let diemLamTron = diemTb.toFixed(1);
+            let diemChu="";
+                // document.writeln("Điểm trung bình của sinh viên là: "+diemTb);
+        
+        if (diemLamTron>=9){
+            diemChu="A+";
+        }else if(diemLamTron>=8.5){
+            diemChu="A"
+        }else if(diemLamTron>=8){
+            diemChu="B+"
+        }else if(diemLamTron>=7){
+            diemChu="B"
+        }else if(diemLamTron>=6.5){ 
+            diemChu="C+"
+        }else if(diemLamTron>=5){
+            diemChu="D+"
+        }else if(diemLamTron>=4){
+            diemChu="D"
+        }else{
+            diemChu="F"
         }
-        if (diemTb>=9){
-            document.writeln("Điểm chữ là A+"+"<br>");
-        }
-        else if(diemTb >= 8 && diemTb < 9){
-            document.writeln("Điểm chữ là A"+"<br>")
-        }
-        else if(diemTb >= 8 && diemTb < 8.5){
-            document.writeln("Điểm chữ là B+"+"<br>")
-        }
-        else if(diemTb >= 7 && diemTb < 8){
-            document.writeln("Điểm chữ là B"+"<br>")
-        }
-        else if(diemTb >= 6.5 && diemTb < 7){
-            document.writeln("Điểm chữ là C+"+"<br>")
-        }
-        else if(diemTb >= 5 && diemTb < 6.5){
-            document.writeln("Điểm chữ là D+"+"<br>")
-        }
-        else if(diemTb >= 4 && diemTb < 5){
-            document.writeln("Điểm chữ là D"+"<br>")
-        }
+        
+        
+        document.getElementById("ketQua").value ="TB : " + diemLamTron + " " + "-" + " " +"Điểm chữ : " + diemChu;
 
+      }
+      
     }
-         tinhDiem(a, b, c);
+        
     </script>
 </body>
 </html>

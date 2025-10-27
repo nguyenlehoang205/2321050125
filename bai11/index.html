@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tính điểm</title>
+</head>
+<body>
+  <h2>Tính điểm</h2>
+  <div>
+    Điểm A: <input type="number" id="diemA" placeholder="Nhập điểm A" />
+  </div>
+  <div>
+    Điểm B: <input type="number" id="diemB" placeholder="Nhập điểm B" />
+  </div>
+  <div>
+    Điểm C: <input type="number" id="diemC" placeholder="Nhập điểm C" />
+  </div>
+  <div>
+    <button onclick="xemKetQua()">Tính điểm</button>
+  </div>
+  <div>
+    Kết quả: <input type="text" id="ketQua" readonly />
+  </div>
+
+  <script>
+    function xemKetQua() {
+      const diemA = parseFloat(document.getElementById("diemA").value);
+      const diemB = parseFloat(document.getElementById("diemB").value);
+      const diemC = parseFloat(document.getElementById("diemC").value);
+
+      if (kiemTraHopLe(diemA, diemB, diemC)) {
+        tinhDiem(diemA, diemB, diemC);
+      } else {
+        document.getElementById("ketQua").value = "Dữ liệu không hợp lệ!";
+      }
+    }
+
+    // function kiemTraHopLe(a, b, c) {
+    //   return [a, b, c].every(diem => !isNaN(diem) && diem >= 0 && diem <= 10);
+    // }
+    function kiemTraHopLe(a, b, c){
+           
+            let ketQua = true;
+             if(a < 0 || a > 10 || typeof(a) != 'number' ){
+                document.writeln("Điểm A không hợp lệ"+"<br>");
+                ketQua = false;
+            }
+            if(b > 10 || b < 0 || typeof(b) != 'number'){
+                document.writeln("Điểm B không hợp lệ"+"<br>");
+                ketQua = false;
+                }
+            if(c < 0 || c > 10 || typeof(c) != 'number'){
+                document.writeln("Điểm C không hợp lệ"+"<br>");
+                ketQua = false;
+            }
+            return ketQua;
+
+        }
+
+    function tinhDiem(a, b, c) {
+      const diemTb = (a * 0.6 + b * 0.3 + c * 0.1);
+      const diemLamTron = diemTb.toFixed(1);
+      let diemChu = "";
+
+      if (diemTb >= 9) diemChu = "A+";
+      else if (diemTb >= 8.5) diemChu = "A";
+      else if (diemTb >= 8) diemChu = "B+";
+      else if (diemTb >= 7) diemChu = "B";
+      else if (diemTb >= 6.5) diemChu = "C+";
+      else if (diemTb >= 5) diemChu = "D+";
+      else if (diemTb >= 4) diemChu = "D";
+      else diemChu = "F";
+
+      document.getElementById("ketQua").value = `TB: ${diemLamTron} - Điểm chữ: ${diemChu}`;
+    }
+  </script>
+</body>
+</html>
+
