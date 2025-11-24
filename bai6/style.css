@@ -67,6 +67,17 @@ a:hover {
     border: none;
     width: 100px;
 }
+.xemPhim{
+    background-color:orangered ;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    width: 100px;
+    border-radius: 10px;
+}
+.xemPhim:hover{
+    background-color:orange;
+}
 
 main {
     background-color: #131314;
@@ -78,6 +89,7 @@ main {
 .quangcao {
     display: flex;
     justify-content: center;
+    
 
 }
 
@@ -179,4 +191,21 @@ footer{
     border:2px red; 
 
 }
-
+.nation{
+    font-size: x-small; 
+    text-align: right;
+    /* cursor:text; */
+    
+}
+.nation:hover{
+    color:orange; 
+    cursor:pointer;
+}
+.anh:hover{
+    cursor:pointer;
+    background-color: orange;
+}
+.ten:hover{
+    cursor:pointer;
+    color: orange;
+}

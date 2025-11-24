@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Chieu cao: <input type="number" id="chieucao" placeholder="Nhap chieu cao">
+    </div>
+     <div>
+        Can nang: <input type="number" id="cannang" placeholder="Nhap can nang">
+    </div>
+    <div>
+        <button onclick="xemketqua()">Chi so BMI</button>
+    </div>
+    <div>
+        Ket qua: <input type="text" id="ketqua">
+    </div>
+    <script>
+        function xemketqua(){
+            let cc=parseFloat(document.getElementById('chieucao').value);
+            let cn=parseFloat(document.getElementById('cannang').value);
+            tinhBMI(cc,cn);
+        }
+        function kiemtrahople(cc,cn){
+            let ketqua=true;
+            if(typeof(cc)!='number'||cc==none){
+                document.writeln("Nhap lai chieu cao");
+                ketqua=false;
+            }
+            if(typeof(cn)!='number'||cn==none){
+                document.writeln("Nhap lai can nang");
+                ketqua=false;
+            }
+            return ketqua;
+        }
+        function tinhBMI(cc,cn){
+            let BMI;
+            if(kiemtrahople==true){
+            BMI=cn/(cc*cc);
+            
+            }
+
+        document.getElementById('ketqua').value=BMI;
+        }
+    </script>
+</body>
+</html>

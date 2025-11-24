@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ví dụ banner nền phim</title>
+  <style>
+    #banner {
+      width: 600px;
+      height: 250px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      border: 2px solid #333;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="banner"></div>
+
+  <script>
+    // Giả sử ta có 1 "phim" với đường dẫn ảnh
+    const selectedFilm = {
+      title: "Interstellar",
+      banner: "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg"
+    };
+
+    // Lấy phần tử banner
+    const bannerElement = document.getElementById("banner");
+
+    // Đặt ảnh nền cho banner
+    bannerElement.style.backgroundImage = "url(" + selectedFilm.banner + ")";
+  </script>
+
+</body>
+</html>

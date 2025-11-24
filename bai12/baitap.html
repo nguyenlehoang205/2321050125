@@ -7,67 +7,65 @@
 </head>
 <body>
     <h2>Tính chỉ số BMI</h2>
-<div>
-    Cân nặng :<input type="number" id="canNang" placeholder="Nhập cân nặng">
-</div>
-<div>
-    Chiều cao :<input type="number" id="chieuCao" placeholder="Nhập chiều cao">
-</div>
-<div>
-    <button onclick="">Tính toán</button>
-</div>
-<h2>
-    Hiển thị kết quả: 
-</h2>
-<script>
-    function xemKetQua(){
-        
-        let canNang = parseFloat(document.getElementById('canNang').value);
-        let chieuCao = parseFloat(document.getElementById('chieuCao').value);
-    }
+    <div>
+        Cân nặng: <input type="number" id="canNang" placeholder="Nhập cân nặng">
+    </div>
+    <div>
+        Chiều cao: <input type="number" id="chieuCao" placeholder="Nhập chiều cao">
+    </div>
+    <div>
+        <button onclick="xemKetQua()">Tính toán</button>
+    </div>
+    <div>
+        Hiển thị kết quả: <input type="text" id="ketQua" readonly>
+    </div>
+    <div>
+        <img id="anhBMI" src="" alt="Ảnh BMI" width="200">
+    </div>
 
-    function kiemTra(a, b){
-        let ketQua = true;
-        if(a<0 || a>180 || typeof(a) !='number'){
-            document.writeln("Cân nặng không hợp lệ"+"<br>");
-                ketQua = false;
+    <script>
+        function xemKetQua() {
+            let canNang = parseFloat(document.getElementById('canNang').value);
+            let chieuCao = parseFloat(document.getElementById('chieuCao').value);
+            tinhToan(canNang, chieuCao);
         }
-        if(b<0 || b>2 || typeof(b) !='number'){
-            document.writeln("Chiều cao không hợp lệ"+"<br>");
-                ketQua = false;
+
+        function kiemTra(a, b) {
+            let hopLe = true;
+            if (isNaN(a) || a <= 0 || a > 180) {
+                alert("Cân nặng không hợp lệ");
+                hopLe = false;
+            }
+            if (isNaN(b) || b <= 0 || b > 2.5) {
+                alert("Chiều cao không hợp lệ");
+                hopLe = false;
+            }
+            return hopLe;
         }
-        return ketQua;
-    }
 
+        function tinhToan(a, b) {
+            if (kiemTra(a, b)) {
+                let bmi = a / (b * b);
+                let lamTron = Number(bmi.toFixed(2));
+                let h2s = document.getElementsByTagName('h2');
+                let img = document.getElementById('anhBMI');
 
-    function tinhToan(){
-        if (kiemTra(a, b) == true){
-            let bmi = (a/(b*b));
-            let lamTron =bmi.toFixed(1);
-            return ketQua;
+                if (lamTron < 18) {
+                    img.src = '../bai12/anh/thieu.png';
+                } else if (lamTron >= 18 && lamTron < 24.9) {
+                    img.src = '../bai12/anh/binhthuong.png';
+                } else if (lamTron >= 25 && lamTron < 29.9) {
+                    img.src = '../bai12/anh/thua.png';
+                } else if (lamTron >= 30 && lamTron < 39.9) {
+                    img.src = '../bai12/anh/beocapdo1.png';
+                } else {
+                    img.src = '../bai12/anh/beonang.png';
+                }
 
-            if (lamTron < 18 ){
-                document.getElementsByTagName('img')[0].src='../bai12/anh/thieu.png';
-                document.getElementByTagName('h2')[1].innerHTML = lamTron;
-            }
-            if(lamTron>18 && lamTron<24.9){
-                document.getElementsByTagName('img')[0].src='../bai12/anh/binhthuong.png';
-                document.getElementByTagName('h2')[1].innerHTML = lamTron;
-            }
-            if(lamTron >= 25 && lamTrong<29.9){
-                document.getElementsByTagName('img')[0].src='../bai12/anh/thua.png';
-                document.getElementByTagName('h2')[1].innerHTML = lamTron;
-            }
-            if(lamTron >= 30 && lamTron < 39.9 ){
-                document.getElementsByTagName('img')[0].src='../bai12/anh/beocapdo1.png';
-                document.getElementByTagName('h2')[1].innerHTML = lamTron;
-            }
-            if(lamTron >= 40){
-                document.getElementsByTagName('img')[0].src='../bai12/anh/beonang.png';
-                document.getElementByTagName('h2')[1].innerHTML = lamTron;
+                h2s[1].innerHTML = "Chỉ số BMI: " + lamTron;
+                document.getElementById("ketQua").value = "BMI : " + lamTron;
             }
         }
-    }
-</script>
+    </script>
 </body>
 </html>

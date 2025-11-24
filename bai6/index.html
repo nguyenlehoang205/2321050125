@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+   
 </head>
 
 <body>
@@ -45,15 +48,21 @@
     </header>
     <main>
         <div class="quangcao">
-            <img src="09_68bfea5810013f0001205210.jpg" alt="">
+            <img src="../bai6/anh/09_68bfea5810013f0001205210.jpg" alt="">
         </div>
         <div class="container">
             <div>
             <div style="display: flex; justify-content: center;">
-                <img class="banner" src="../bai6/640x396-muado.jpg">
+                <img class="banner" src="../bai6/anh/640x396-muado.jpg">
+            </div>
+            <div>
+                <iframe class="trailer" width="1050" height="550" style="display:none" src=""></iframe>
+            </div>
+            <div>
+                <button class="xemPhim" onclick="viewTrailer()">Xem phim</button>
             </div>
             <div style="display: flex; justify-content: center;">
-                    <img class="qc" src="../bai6/qc.jpg" alt="">
+                    <img class="qc" src="../bai6/anh/qc.jpg" alt="">
                 </div>
             </div>
         <div class="theloai">
@@ -63,7 +72,7 @@
             <div class="danhsach">
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img src="../bai6/anh/350x495-muado.jpg" alt="">
                     </div>
                     <div class="ten">
                         Mưa đỏ
@@ -71,7 +80,7 @@
                 </div>
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img src="../bai6/anh/350x495-muado.jpg" alt="">
                     </div>
                     <div class="ten">
                         Mưa đỏ
@@ -79,7 +88,7 @@
                 </div>
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img src="../bai6/anh/350x495-muado.jpg" alt="">
                     </div>
                     <div class="ten">
                         Mưa đỏ
@@ -87,7 +96,7 @@
                 </div>
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img src="../bai6/anh/350x495-muado.jpg" alt="">
                     </div>
                     <div class="ten">
                         Mưa đỏ
@@ -95,7 +104,7 @@
                 </div>
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img src="../bai6/anh/350x495-muado.jpg" alt="">
                     </div>
                     <div class="ten">
                         Mưa đỏ
@@ -110,42 +119,58 @@
             <div class="danhsach">
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <!--  -->
+                        <img onclick="chooseFilm(1)" src="../bai6/anh/350x495-muado.jpg" width="128" height="288" alt="">
                     </div>
-                    <div class="ten">
+                    <div onclick="chooseFilm(1)" class="ten">
                         Mưa đỏ
+                    </div>
+                    <div onclick="chooseNation(1)" class="nation">
+                        Việt Nam
                     </div>
                 </div>
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img onclick="chooseFilm(2)" src="../bai6/anh/R.jpeg" width="128" height="288" alt="">
                     </div>
-                    <div class="ten">
-                        Mưa đỏ
+                    <div onclick="chooseFilm(2)" class="ten">
+                        Trạng Quỳnh
                     </div>
-                </div>
-                <div class="phim">
-                    <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
-                    </div>
-                    <div class="ten">
-                        Mưa đỏ
+                    <div onclick="chooseNation(2)" class="nation">
+                        Việt Nam
                     </div>
                 </div>
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img onclick="chooseFilm(3)" src="../bai6/anh/phim-Viet-Mat-Troi-Mua-Dong-1500x2000-1.jpg" width="128" height="288" alt="">
                     </div>
-                    <div class="ten">
-                        Mưa đỏ
+                    <div onclick="chooseFilm(3)" class="ten">
+                        Mặt trời mùa đông
+                    </div>
+                    <div onclick="chooseNation(3)" class="nation">
+                        Việt Nam
                     </div>
                 </div>
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img onclick="chooseFilm(4)" src="../bai6/anh/kekientao.jpg" width="128" height="288" alt="">
                     </div>
-                    <div class="ten">
-                        Mưa đỏ
+                    <div onclick="chooseFilm(4)" class="ten">
+                        Kẻ kiến tạo
+                    </div>
+                    <div onclick="chooseNation(4)" class="nation">
+                        Hoa Kỳ
+                    </div>
+                </div>
+                <div class="phim">
+                    <div class="anh">
+                        <img onclick="chooseFilm(5)" src="../bai6/anh/chienbinh.jpg" width="128" height="288" alt="">
+                    </div>
+                    <div onclick="chooseNation(5)" class="ten">
+                        Chiến binh cuối cùng
+                    </div>
+                    <div onclick="chooseFilm(5)" class="nation">
+                        Hoa Kỳ
                     </div>
                 </div>
             </div>
@@ -155,41 +180,49 @@
                 Anime hot
             </div>
             <div class="danhsach">
+            
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                            <img src="../bai6/anh/conan.jpg"  alt="">
+                     
+                        <!-- <img src="anh/OIP.webp"  alt=""> -->
+                    </div>
+                    <div class="ten" >
+                        Conan
+                    </div>
+                </div>
+                
+           
+                <div class="phim">
+                    <div class="anh">
+                        <img src="../bai6/anh/350x495-muado.jpg" alt="">
                     </div>
                     <div class="ten">
                         Mưa đỏ
                     </div>
                 </div>
+
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img src="../bai6/anh/350x495-muado.jpg" alt="">
                     </div>
                     <div class="ten">
                         Mưa đỏ
                     </div>
                 </div>
+
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img src="../bai6/anh/350x495-muado.jpg" alt="">
                     </div>
                     <div class="ten">
                         Mưa đỏ
                     </div>
                 </div>
+
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
-                    </div>
-                    <div class="ten">
-                        Mưa đỏ
-                    </div>
-                </div>
-                <div class="phim">
-                    <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img src="../bai6/anh/350x495-muado.jpg" alt="">
                     </div>
                     <div class="ten">
                         Mưa đỏ
@@ -204,7 +237,7 @@
             <div class="danhsach">
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img src="../bai6/anh/350x495-muado.jpg" alt="">
                     </div>
                     <div class="ten">
                         Mưa đỏ
@@ -212,7 +245,7 @@
                 </div>
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img src="../bai6/anh/350x495-muado.jpg" alt="">
                     </div>
                     <div class="ten">
                         Mưa đỏ
@@ -220,7 +253,7 @@
                 </div>
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img src="../bai6/anh/350x495-muado.jpg" alt="">
                     </div>
                     <div class="ten">
                         Mưa đỏ
@@ -228,7 +261,7 @@
                 </div>
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img src="../bai6/anh/350x495-muado.jpg" alt="">
                     </div>
                     <div class="ten">
                         Mưa đỏ
@@ -236,7 +269,7 @@
                 </div>
                 <div class="phim">
                     <div class="anh">
-                        <img src="../bai6/350x495-muado.jpg" alt="">
+                        <img src="../bai6/anh/350x495-muado.jpg" alt="">
                     </div>
                     <div class="ten">
                         Mưa đỏ
@@ -251,15 +284,15 @@
             
                  <div class="footer-logo">
                 <div>
-                    <img src="../bai6/logo-fpt-play.06da7da.png">
+                    <img src="../bai6/anh/logo-fpt-play.06da7da.png">
                 </div>
 
                 <div>
-                    <img src="../bai6/logoSaleNoti.cb85045.png" width="55%">
+                    <img src="../bai6/anh/logoSaleNoti.cb85045.png" width="55%">
                 </div>
 
                 <div>
-                    <img src="../bai6/_dmca_premi_badge_4.png">
+                    <img src="../bai6/anh/_dmca_premi_badge_4.png">
                 </div>
                      </div> 
             
@@ -378,6 +411,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>

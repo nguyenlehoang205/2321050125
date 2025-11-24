@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        .holder{
+            text-align: center;
+            
+        }
+        .button{
+            text-align: center;
+           
+            
+        }
+        .cal{
+            border:none;
+            padding: 10px 20px;
+            width: 100px;
+            border-radius: 20px;
+            background-color: orangered;
+             font-family: Arial;
+            font-size: 14px;
+        }
+        .anhbmi{
+           text-align: center;
+        }
+        .container{
+            width:30%;
+            height:70%;
+            background-color:aqua;
+            margin:auto;
+            border-radius: 15px;
+        }
+        .anhbmi{
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+<main>
+    <div class="container">
+    <h2>
+        Tính BMI
+    </h2>
+    <div class="holder">  
+        <div>
+        Chiều cao: <input type="number" id="height" placeholder="Nhập chiều cao">
+        </div>
+        <div>
+        Cân nặng: <input type="number" id="weight" placeholder="Nhập cân nặng">
+        </div>
+        <div>
+        Kết quả: <input type="text" id="ketQua" readonly>
+    </div>
+    </div>
+    <!-- <div>
+        Chiều cao: <input type="number" id="height" placeholder="Nhập chiều cao">
+    </div>
+    <div>
+        Cân nặng: <input type="number" id="weight" placeholder="Nhập cân nặng">
+    </div> -->
+    <div class="button">
+        <button class="cal" onclick="xemKetQua()">Tính toán</button>
+    </div>
+    
+    <div class="anhbmi"> 
+        <img src="" id="anh" alt="Kết Quả" style="display:none" >
+    </div>
+    </div>
+    </main>
+
+   
+
+    <script>
+        function xemKetQua(){
+            let height =parseFloat(document.getElementById('height').value);
+            let weight =parseFloat(document.getElementById('weight').value);
+            tinhToan(height,weight);
+        }
+
+        function kiemTra(a,b){
+            let ketQua=true;
+            if (a<=0 || a>2 || typeof(a) != 'number'  ){
+                alert("Nhập lại chiều cao");
+                ketQua=false;
+            }
+            if(b<=0 || b>180 || typeof(b) != 'number' ){
+                alert("Nhập lại cân nặng");
+                ketQua=false;
+            }
+            return ketQua;
+        }
+    
+
+        function tinhToan(a, b){
+            if(kiemTra(a,b)==true){
+                let bmi = (b/(a*a));
+                let lamTron = Number(bmi.toFixed(2));
+
+                if(lamTron<18){
+                   document.getElementsByTagName('img')[0].src='../bai12/anh/thieu.png';
+                   document.getElementsByTagName('img')[0].style.display="block";
+                
+                   document.getElementById('ketQua').value="BMI: "+lamTron;
+                } else if (lamTron >= 18 && lamTron < 24.9) {
+                    document.getElementsByTagName('img')[0].src='../bai12/anh/binhthuong.png';
+                    document.getElementsByTagName('img')[0].style.display="block";
+                    
+                    document.getElementById('ketQua').value="BMI: "+lamTron;
+                } else if (lamTron >= 25 && lamTron < 29.9) {
+                    document.getElementsByTagName('img')[0].src='../bai12/anh/thua.png';
+                    document.getElementsByTagName('img')[0].style.display="block";
+                   
+                    document.getElementById('ketQua').value="BMI: "+lamTron;
+                } else if (lamTron >= 30 && lamTron < 39.9) {
+                    document.getElementsByTagName('img')[0].src='../bai12/anh/beocapdo1.png';
+                    document.getElementsByTagName('img')[0].style.display="block";
+                    
+                    document.getElementById('ketQua').value="BMI: "+lamTron;
+                } else {
+                    document.getElementsByTagName('img')[0].src='../bai12/anh/beonang.png';
+                    document.getElementsByTagName('img')[0].style.display="block";
+                    
+                    document.getElementById('ketQua').value="BMI: "+lamTron;
+                }
+
+            }
+        }
+    </script>
+    
+</body>
+</html>
